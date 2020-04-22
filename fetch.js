@@ -29,11 +29,11 @@ async function getISS() {
         mymap.setView([latitude,longitude], 2);
         firstTime = false;
     }
-    document.getElementById('lat').textContent = latitude.toFixed(2) + '°';
-    document.getElementById('lon').textContent = longitude.toFixed(2) + '°';
+    document.getElementById('lat').textContent = latitude.toFixed(2);
+    document.getElementById('lon').textContent = longitude.toFixed(2);
     
 }
 
 getISS();
 
-setInterval(getISS, 1000);
+setInterval(getISS, 3000);
